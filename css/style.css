@@ -16,7 +16,7 @@ ul {
 
 .menu_superior {
 
-	background-color: coral;
+	background-image: linear-gradient(to bottom, coral 0%, transparent 100%);
 }
 
 .contenedormenu_superior {
@@ -71,7 +71,7 @@ ul {
 }
 
 .grid a {
-	color: darkgray;
+	color: royalblue;
 	font-size: 30px;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -82,13 +82,12 @@ ul {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	transition: all 0.4s ease-in-out;
 }
 
 
-.grid a {
-	opacity: 0.7
-		/*0 - 1*/
-	;
+.grid a:hover {
+	opacity: 0.5;
 }
 
 .grid1 {
@@ -141,6 +140,14 @@ ul {
 
 .flex img {
 	width: 100%;
+	transition: all 0.5s ease-in-out;
+
+}
+
+.flex img:hover {
+
+	transform: rotate(15deg) scale(1.5);
+
 }
 
 .flex .text {
@@ -156,7 +163,6 @@ ul {
 	border-style: solid;
 	color: rgba(255, 255, 255, 0.827);
 	background-color: coral;
-
 }
 
 .barra {
