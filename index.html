@@ -4,88 +4,146 @@
 <head>
 	<meta charset="utf-8">
 	<title>MoodCheckIn</title>
-	<enlace rel="preconectar" href="https://fonts.googleapis.com">
-		<enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
-			<enlace href="https: //fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swap" rel="stylesheet">
-				<link rel="stylesheet" href="CSS/style.css">
+
+	<link rel="stylesheet" href="CSS/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 
 <body>
+	<nav class="navbar navbar-expand-lg bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Mood Check In</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="pages/micros.html">Destinos en Micro</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="pages/aereos.html">Destinos en Avión</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="pages/cancun.html">Cancún</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="pages/contacto.html">Contacto</a>
+					</li>
 
-	<nav class="menu_superior">
-		<div class="contenedormenu_superior">
-			<div class="logo"><img src="imagenes/logo_ojotas.png" title="logocheckin"></div>
-			<div class="menu">
-				<ul>
-					<li><a href="#">INICIO</a></li>
-					<li><a href="pages/micros.html">DESTINOS EN MICRO</a></li>
-					<li><a href="pages/aereos.html">DESTINOS EN AVIÓN</a></li>
-					<li><a href="pages/cancun.html">CANCÚN</a></li>
-					<li><a href="pages/contacto.html">CONTACTO</a></li>
 				</ul>
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
 			</div>
 		</div>
-
 	</nav>
-	<main>
-		<section>
-			<div class="grid">
-				<div class="grid1">
-					<a href="pages/micros.html">
-						<span>micros</span>
-					</a>
-				</div>
+	</section>
+	<div>
+		<h1>Destino más visitado</h1>
+		<div>
 
-				<div class="grid2">
-					<a href="pages/aereos.html">
-						<span>aereos</span>
-					</a>
-				</div>
-
-				<div class="grid3">
-					<a href="pages/cancun.html">
-						<span>cancun</span>
-					</a>
-				</div>
-
-
+			<div>
+				<p class="lead">San Carlos de Bariloche se encuentran ubicado en la Provincia de Río Negro, a 1.600 Km de Capital
+					Federal. Te invitamos a pasar unas vacaciones de invierno de película. No te pierdas las
+					divertidas aventuras para todo el público. Una historia romántica rodeados de paisajes
+					naturales. Aventuras en la montaña, llena de acción, velocidad y adrenalina. Un viaje que nunca
+					olvidarás, como aprender a esquiar. Nos hospedaremos en el Hotel Nahuel Huapi, ubicado a unas
+					cuadras del Centro Cívico. (Habitaciones Dobles, Triples y Cuádruples).<a
+						href="contacto.html">CONTACTARME CON UN ASESOR</a></p>
 			</div>
 
-
-		</section>
-		<div class="flex">
-			<h1>Destino más visitado</h1>
-			<div class="item">
-				<div class="img">
-					<img src="imagenes/bariloche.jpg" title="barilcohe">
+		</div>
+	</div>
+	<div class="accordion" id="accordionExample">
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="headingOne">
+				<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+					aria-expanded="true" aria-controls="collapseOne">
+					Paquetes en micro al 50% off (base doble)
+				</button>
+			</h2>
+			<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+				data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<strong>Termas de Colón - Salida 12 de Agosto</strong> Las termas se encuentran ubicadas en Entre
+					Rios, a 328 Km de Capital Federal. Descubrí una forma de mantener sensaciones de agua, verde, sol y
+					paisaje, para disfrutar de la naturaleza en su estado puro. El complejo cuenta de 8 piscinas con
+					agua termal y parque acuático. El alojamiento, Apart Del Sol, se encuentra dentro del Parque Termal.
+					Habitaciones Dobles, Triples y Cuadruples.<a href="contacto.html">CONTACTARME CON UN ASESOR</a>
 				</div>
-				<div class="text">
-					<p>San Carlos de Bariloche se encuentran ubicado en la Provincia de Río Negro, a 1.600 Km de Capital
-						Federal. Te invitamos a pasar unas vacaciones de invierno de película. No te pierdas las
-						divertidas aventuras para todo el público. Una historia romántica rodeados de paisajes
-						naturales. Aventuras en la montaña, llena de acción, velocidad y adrenalina. Un viaje que nunca
-						olvidarás, como aprender a esquiar. Nos hospedaremos en el Hotel Nahuel Huapi, ubicado a unas
-						cuadras del Centro Cívico. (Habitaciones Dobles, Triples y Cuádruples).<a
-							href="contacto.html">CONTACTARME CON UN ASESOR</a></p>
+				<div class="accordion-body">
+					<strong>Cataratas del Iguazú - Salida 14 de Agosto</strong> Conocé una de las 7 maravillas del
+					Mundo, Las Cataratas del Iguazú, ubicadas en la provincia de Misiones a 1.300Km de la Ciudad
+					Autónoma de Buenos Aires. Observaremos más de 2 km de cascadas que superan los 70 metros de altura,
+					una manifestación espectacular de uno de los recursos cada vez más escasos del planeta: el agua. Nos
+					hospedaremos en el Hotel Amayal, habitaciones dobles, triples y cuadruples.<a
+						href="contacto.html">CONTACTARME CON UN ASESOR</a>
 				</div>
-
 			</div>
 		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="headingTwo">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					Paquetes Aeroes al 30% off (base doble)
+				</button>
+			</h2>
+			<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+				data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<strong>Ushuaia - Salida 15 de Agosto</strong> Viajamos al fin del mundo, donde la tierra se acaba,
+					Ushuaia, ubicada a
+					3.156Km desde la Ciudad Autónoma de Buenos Aires. Ushuaia se encuentra al final de la Patagonia
+					austral, es el extremo sur de la Argentina, el fin del mundo o como la llaman algunos: el principio
+					de todo. Está rodeada por el mar y por la cordillera; desde donde te pares podés llegar a ver alguno
+					de los dos y sorprenderte con los colores y la inmensidad de la naturaleza presente en la ciudad.
+					Nos hospedaremos en Arakur Ushuaia Resort & Spa, habitaciones dobles y triples.<a href="contacto.html">CONTACTARME CON UN ASESOR</a>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header" id="headingThree">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+					data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Cancún al 20% off (base doble)
+				</button>
+			</h2>
+			<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+				data-bs-parent="#accordionExample">
+				<div class="accordion-body">
+					<strong>Cancún - Salida 16 de Agosto</strong> Disfruta de 10 días de belleza escénica enmarcada por playas de arena blanca
+					y mar turquesa; la extensión y biodiversidad de sus arrecifes, islas, lagunas, cenotes y selva; la
+					riqueza ancestral de la cultura maya; una excelente conectividad aérea y terrestre; y, su
+					infraestructura hotelera de primer nivel. Nos alojaremos en el hotel Krystal Cancún<a href="contacto.html">CONTACTARME CON UN ASESOR</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 
 
 	</main>
-	<footer class="footer">
-		<div class="logo_footer"><img src="imagenes/logo.png" alt="Logo Check In" width="100">
+	<footer class="p-2 bg-light border">
+		<div><img src="imagenes/logo.png" alt="Logo Check In" width="100">
 		</div>
-		<ul class="menu_inferior">
-			<li class="barra"><a href="#">INICIO</a></li>
-			<li class="barra"><a href="pages/micros.html">DESTINOS EN MICRO</a></li>
-			<li class="barra"><a href="pages/aereos.html">DESTINOS EN AVIÓN</a></li>
-			<li class="barra"><a href="pages/cancun.html">CANCÚN</a></li>
-			<li class="barra"><a href="pages/contacto.html">CONTACTO</a></li>
+		<ul>
+			<li><a href="#">INICIO</a></li>
+			<li><a href="pages/micros.html">DESTINOS EN MICRO</a></li>
+			<li><a href="pages/aereos.html">DESTINOS EN AVIÓN</a></li>
+			<li><a href="pages/cancun.html">CANCÚN</a></li>
+			<li><a href="pages/contacto.html">CONTACTO</a></li>
 		</ul>
-		<small class="COP">Copyright Mood Check In</small>
+		<small>Copyright Mood Check In</small>
 	</footer>
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
